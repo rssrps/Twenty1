@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_playgame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="@drawable/black_bkground"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.raman.twenty1.raman.example.raman.twenty1.playgame">
+
+    <ImageView
+        app:srcCompat="@drawable/invite_btn"
+        android:layout_marginTop="11dp"
+        android:id="@+id/invite_button"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/opponent_gmid"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/opponent_gmid"
+        android:layout_width="160dp"
+        android:textColor="#ffffff"
+        android:hint="Gamer_id"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignEnd="@+id/opponent_avatar" />
+
+    <ImageView
+        app:srcCompat="@drawable/two"
+        android:id="@+id/two"
+        android:alpha="0.6"
+        android:layout_alignTop="@+id/one"
+        android:layout_centerHorizontal="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:text="Opponent : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#c0c0c0"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="14dp"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/user_avatar" />
+
+    <TextView
+        android:text="00"
+        android:textSize="64sp"
+        android:textColor="#FFD700"
+        android:id="@+id/gamesum"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_height="70dp"
+        android:layout_width="80dp"
+        android:layout_below="@+id/opponent_gamerid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp" />
+
+    <ImageView
+        app:srcCompat="@drawable/three"
+        android:id="@+id/three"
+        android:alpha="0.6"
+        android:layout_alignTop="@+id/two"
+        android:layout_alignEnd="@+id/invite_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <ImageView
+        app:srcCompat="@drawable/one"
+        android:id="@+id/one"
+        android:alpha="0.6"
+        android:layout_below="@+id/gamesum"
+        android:layout_alignStart="@+id/invite_button"
+        android:layout_marginTop="14dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <ImageView
+        app:srcCompat="@mipmap/playbutton"
+        android:id="@+id/makemove"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:text="Vs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_marginTop="58dp"
+        android:layout_below="@+id/invite_button"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:srcCompat="@drawable/turnicon"
+        android:layout_alignTop="@+id/gamesum"
+        android:layout_toEndOf="@+id/makemove"
+        android:layout_marginStart="16dp"
+        android:id="@+id/oturn" />
+
+    <TextView
+        android:text="Thinking..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/oturn"
+        android:textColor="#ffff"
+        android:fontFamily="casual"
+        android:layout_toEndOf="@+id/makemove"
+        android:id="@+id/thinking" />
+
+    <ImageView
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/unknown_person"
+        android:id="@+id/user_avatar"
+        android:layout_width="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/invite_button"
+        android:layout_toStartOf="@+id/gamesum" />
+
+    <TextView
+        android:text="thisuser_gamerid"
+        android:layout_height="20dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="17dp"
+        android:id="@+id/user_gamerid"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="150dp"
+        android:layout_below="@+id/user_avatar"
+        android:layout_toStartOf="@+id/textView4" />
+
+    <ImageView
+        app:srcCompat="@drawable/turnicon"
+        android:id="@+id/uturn"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_above="@+id/yourtuen"
+        android:layout_alignStart="@+id/one" />
+
+    <TextView
+        android:text="Your turn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff"
+        android:fontFamily="casual"
+        android:id="@+id/yourtuen"
+        android:layout_alignBaseline="@+id/thinking"
+        android:layout_alignBottom="@+id/thinking"
+        android:layout_alignEnd="@+id/one" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/sunglasses"
+        android:id="@+id/emojiuser"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="opp_gamerid  "
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:id="@+id/opponent_gamerid"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_alignBaseline="@+id/user_gamerid"
+        android:layout_alignBottom="@+id/user_gamerid"
+        android:layout_toEndOf="@+id/two" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/unknown_person"
+        android:id="@+id/opponent_avatar"
+        android:layout_above="@+id/user_gamerid"
+        android:layout_toStartOf="@+id/emojiopponent" />
+
+    <ImageView
+        app:srcCompat="@drawable/sunglasses"
+        android:id="@+id/e2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/yourtuen" />
+
+    <ImageView
+        app:srcCompat="@drawable/laughing"
+        android:id="@+id/e4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/thinking" />
+
+    <ImageView
+        app:srcCompat="@drawable/angry"
+        android:id="@+id/e1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/user_avatar" />
+
+    <ImageView
+        app:srcCompat="@drawable/heart"
+        android:id="@+id/e3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/oturn" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:srcCompat="@drawable/coin"
+        android:id="@+id/coin"
+        android:alpha="0"
+        android:layout_alignTop="@+id/opponent_avatar"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <TextView
+        android:text="-10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/coin"
+        android:textColor="#FFD700"
+        android:textSize="10sp"
+        android:alpha="0"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/minusten" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/sunglasses"
+        android:id="@+id/emojiopponent"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

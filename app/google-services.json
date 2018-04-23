@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "616064951493",
+    "firebase_url": "https://twenty1-dbff1.firebaseio.com",
+    "project_id": "twenty1-dbff1",
+    "storage_bucket": "twenty1-dbff1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616064951493:android:7167c1d7a6a46bb2",
+        "android_client_info": {
+          "package_name": "raman.raman.raman.twenty1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616064951493-jk3ss4t9ulq5lrsoc3qstp9t2u6666fg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.raman.twenty1",
+            "certificate_hash": "02092e01e1114c18e6aaaa4bd4066260e2576d15"
+          }
+        },
+        {
+          "client_id": "616064951493-pja8enhlid7vg44o76173v3gfkkg3ps6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVAI5KDUF3gTKjg54mQM9Lv1Zzj0MxnRA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616064951493-pja8enhlid7vg44o76173v3gfkkg3ps6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

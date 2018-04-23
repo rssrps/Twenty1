@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/home_background1"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.raman.twenty1.raman.example.raman.twenty1.MainActivity">
+
+    <ImageView
+        app:srcCompat="@mipmap/my_achievements"
+        android:id="@+id/myachievements"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:alpha="0.7"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <ImageView
+        app:srcCompat="@drawable/helpicon1"
+        android:id="@+id/help"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:alpha="0.7"
+        android:layout_height="50dp"
+        android:layout_width="50dp" />
+
+    <ImageView
+        app:srcCompat="@mipmap/playbutton"
+        android:id="@+id/playgame"
+        android:layout_width="280dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        app:srcCompat="@mipmap/nomessage"
+        android:id="@+id/message"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:alpha="0.7"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/gmid"
+        android:text="gamerid"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_alignTop="@+id/avatar"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        app:srcCompat="@drawable/boy"
+        android:id="@+id/avatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/myachievements" />
+
+    <ImageView
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/reseticon"
+        android:id="@+id/reseticon"
+        android:layout_width="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="22dp" />
+
+    <TextView
+        android:text="oppgmid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:id="@+id/oppgamerid"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_below="@+id/myachievements"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="30dp"
+        app:srcCompat="@drawable/tick"
+        android:layout_marginTop="17dp"
+        android:id="@+id/tick"
+        android:layout_height="30dp"
+        android:layout_below="@+id/oppgamerid"
+        android:layout_toStartOf="@+id/message" />
+
+    <ImageView
+        android:layout_width="30dp"
+        app:srcCompat="@drawable/cross"
+        android:id="@+id/cross"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/tick"
+        android:layout_toEndOf="@+id/message" />
+
+
+    <TextView
+        android:text="$ 100"
+        android:layout_height="wrap_content"
+        android:textColor="#ffc100"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:id="@+id/paise"
+        android:layout_width="200dp"
+        android:layout_above="@+id/gmid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp" />
+
+</RelativeLayout>
